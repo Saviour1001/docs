@@ -182,7 +182,7 @@ The <code>bitcoin.conf</code> file is used to configure how your node will run. 
 Making the file.
 
 ```
-touch $HOME/.bitcoin/bitcoin.conf
+touch $DATA_DIR/bitcoin.conf
 ```
 
 Adding the following in your <code>bitcoin.conf</code> should work.
