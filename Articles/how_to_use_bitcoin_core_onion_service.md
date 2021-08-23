@@ -179,10 +179,10 @@ To see verbose Tor information in the bitcoind debug log, pass -debug=tor.
 ### Listening to TorV3 Nodes
 
 The <code>bitcoin.conf</code> file is used to configure how your node will run. We will simply create the file and add the settings we want our node to have. You can read more about the different features we can add in <code>bitcoin.conf</code> [here](https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md#1-run-bitcoin-core-behind-a-tor-proxy).
-Making the file.
+Making the file and adding the configurations.
 
 ```
-touch $DATA_DIR/bitcoin.conf
+nano $DATA_DIR/bitcoin.conf
 ```
 
 Adding the following in your <code>bitcoin.conf</code> should work.
