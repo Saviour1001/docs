@@ -261,7 +261,7 @@ Congrats! :tada: You got your Bitcoin Core running on Tor and also got connected
 
 ## Resources
 
-These are the resources which acted as a source for this documents, you can use them for further digging and studying more.
+These are the resources which acted as a source for this guide, you can use them for further digging and studying more.
 
 - [Tor.md](https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md)
 - [Bitcoin Core 0.21 Testing Guide](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/0.21-Release-Candidate-Testing-Guide)
