@@ -2,6 +2,14 @@
 
 This is a quick summary about how to get the Bitcoin Core onion service up and running. The purpose of this summary is to list all the required steps to get the Onion service running in one place.
 
+- [Preparation](#Preparation)
+
+  - Compiling Bitcoin Core
+  - Installing Tor
+
+- [Setting up the Environment](#Configurations)
+- [Using Tor](#Connecting)
+
 ## Preparation
 
 ## 1. Grab the latest release of the Bitcoin Core
@@ -87,7 +95,7 @@ brew install tor
 tor
 ```
 
-## Setting up the basics first
+## Configurations
 
 <code>bitcoin.conf</code> file contains the configurations/settings on which the Bitcoin Core should run upon. The default locations of this file can be found via [this](https://github.com/bitcoin/bitcoin/blob/master/doc/bitcoin-conf.md#configuration-file-path). Currently we will setup the file at <code>/home/.bitcoin</code>
 
@@ -164,7 +172,7 @@ On some systems (such as Arch Linux), you may also need to add the following lin
 DataDirectoryGroupReadable 1
 ```
 
-## Using Tor
+## Connecting
 
 To see verbose Tor information in the bitcoind debug log, pass -debug=tor.
 
