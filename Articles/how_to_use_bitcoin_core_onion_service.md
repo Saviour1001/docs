@@ -57,18 +57,19 @@ cd bitcoin
 ```
 
 - Take note of the instructions displayed in the terminal at the end of the BDB installation
-
-  <code> db4 build complete.
+```
+db4 build complete.
   When compiling bitcoind, run `./configure` in the following way:
   export BDB_PREFIX='<PATH-TO>/db4'
-  ./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include" ...</code>
+  ./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include" ...
+```
 
 ### 4. Compile Bitcoin from source.
 
-- <code>export BDB_PREFIX='<PATH-TO>/db4'</code> (you can use the output from the BDB build above).
+- <code>export BDB_PREFIX='\<PATH-TO\>/db4'</code> (you can use the output from the BDB build above).
 - <code>./autogen.sh</code>
 - <code>./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"</code> if using BDB 4.8, otherwise <code>./configure --with-incompatible-bdb
-  </code>
+  </code> along with other configuration options
 - <code>make</code> or if you have multiple CPU cores, you can use all of them to reduce compile time.
 - <code>make -j "$(($(nproc)+1))"</code> on Linux
 - <code>make -j "$(($(sysctl -n hw.physicalcpu)+1))"</code> on macOS
@@ -89,7 +90,7 @@ The easiest way to install tor is to use [homebrew](https://brew.sh/).
 brew install tor
 ```
 
-- To get the Tor Running:
+- To get the Tor running, run this command on a terminal, and leave it running:
 
 ```
 tor
